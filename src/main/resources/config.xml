@@ -9,15 +9,6 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean name="emp" class="com.example.Employee" p:id="20" p:name="name" />
-    <bean name="hospital" class="com.example.list.Hospital" p:name="Global Hospital">
-        <property name="departments">
-            <list>
-                <value>Front Office</value>
-                <value>In Patient</value>
-                <value>Out Patient</value>
-            </list>
-        </property>
-    </bean>
+    <bean name="emp" class="com.example.Employee" p:id="20" p:name="Faiz" />
 
 </beans>

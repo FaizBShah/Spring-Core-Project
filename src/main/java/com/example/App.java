@@ -8,6 +8,7 @@ public class App {
         ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("config.xml");
         // Getting the Spring Bean from the Context object by bean id
         Employee emp = (Employee) ctx.getBean("emp");
-        System.out.println(emp);
+        System.out.println(emp.getId());
+        System.out.println(emp.getName());
     }
 }
