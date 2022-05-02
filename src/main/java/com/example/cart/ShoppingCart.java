@@ -1,20 +1,22 @@
 package com.example.cart;
 
-public class ShoppingCart {
-    private Item item;
+import java.util.List;
 
-    public Item getItem() {
-        return item;
+public class ShoppingCart {
+    private List<Item> items;
+
+    public List<Item> getItems() {
+        return items;
     }
 
-    public void setItem(Item item) {
-        this.item = item;
+    public void setItems(List<Item> items) {
+        this.items = items;
     }
 
     @Override
     public String toString() {
         return "ShoppingCart{" +
-                "item=" + item +
+                "items=" + items +
                 '}';
     }
 }
