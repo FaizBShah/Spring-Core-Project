@@ -9,9 +9,12 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <!--  To enable all annotations, because Spring disables annotations by default. This is the recommended way  -->
+    <context:annotation-config />
+
     <bean name="patient" class="com.example.lifecycle.annotations.Patient" p:id="123" />
 
     <!--  To enable lifecycle annotations, because Spring disables annotations by default  -->
-    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
+    <!--  <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />  -->
 
 </beans>
