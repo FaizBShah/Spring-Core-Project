@@ -1,4 +1,4 @@
-package com.example.lifecycle.xmlconfig;
+package com.example.lifecycle.interfaces;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -8,7 +8,7 @@ public class PatientApp {
         // To invoke the destroy() method, we need to use the registerShutdownHook()
         // This function is only available in the AbstractApplicationContext, so we need
         // to import this class.
-        AbstractApplicationContext ctx = new ClassPathXmlApplicationContext("lifecyclexmlconfig.xml");
+        AbstractApplicationContext ctx = new ClassPathXmlApplicationContext("lifecycleinterfacesconfig.xml");
         Patient patient = (Patient) ctx.getBean("patient");
 
         System.out.println(patient);
