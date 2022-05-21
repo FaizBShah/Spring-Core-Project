@@ -10,8 +10,10 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean name="address" class="com.example.constructorinjection.Address" p:hno="700" p:street="Mira Mesa Blvd" p:city="San Diego" />
-
-    <bean name="employee" class="com.example.constructorinjection.Employee" c:id="123" c:address-ref="address" />
+    <!--  Types must be given to resolve ambiguity problem in constructor injection  -->
+    <bean name="addition" class="com.example.constructorinjection.ambiguity.Addition">
+        <constructor-arg type="int" value="10" />
+        <constructor-arg type="int" value="20" />
+    </bean>
 
 </beans>
